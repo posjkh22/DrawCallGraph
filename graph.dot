@@ -4,94 +4,98 @@ digraph {
 	subgraph cluster_0 {
 		color=lightgrey;
 		label="fnc1";
-		Node0x20a4d20 [shape=record, label="{
-				[15] 0x20a4dc8: alloca %0x20a2830\l
-				[15] 0x20a4e58: alloca %0x20a2830\l
-				[0] 0x20a4ed0: store %0x20a4cf0, %0x20a4dc8\l
-				[15] 0x20a4f38: load %0x20a4dc8\l
-				[0] 0x20a5000: store %0x20a4f38, %0x20a4e58\l
-				[15] 0x20a5068: load %0x20a4e58\l
-				[0] 0x20a50c8: ret %0x20a5068\l
+		Node0x2760860 [shape=record, label="{
+				alloca %0x275d220\l
+				alloca %0x275d220\l
+				store %0x2760730, %0x2760928\l
+				load %0x2760928\l
+				store %0x2761ea8, %0x27609b8\l
+				load %0x27609b8\l
+				ret %0x27626e8\l
 			}"];
 	}
 	subgraph cluster_1 {
 		color=lightgrey;
-		label="fnc2";
-		Node0x20a5240 [shape=record, label="{
-				[15] 0x20a52d8: alloca %0x20a2830\l
-				[15] 0x20a5338: alloca %0x20a2830\l
-				[0] 0x20a5400: store %0x20a51e0, %0x20a52d8\l
-				[0] 0x20a5480: store %0x20a5208, %0x20a5338\l
-				[15] 0x20a54e8: load %0x20a52d8\l
-				[0] 0x20a5548: ret %0x20a54e8\l
-			}"];
+		label="llvm.dbg.declare";
 	}
 	subgraph cluster_2 {
 		color=lightgrey;
-		label="fnc3";
-		Node0x20a56c0 [shape=record, label="{
-				[15] 0x20a5758: alloca %0x20a2830\l
-				[15] 0x20a57b8: alloca %0x20a2830\l
-				[15] 0x20a5868: alloca %0x20a2830\l
-				[0] 0x20a58e0: store %0x20a5660, %0x20a5758\l
-				[0] 0x20a5960: store %0x20a5688, %0x20a57b8\l
-				[0] 0x20a59e0: store %0x20a4880, %0x20a5868\l
-				[15] 0x20a5a48: load %0x20a5758\l
-				[15] 0x20a5aa8: bitcast %0x20a5a48\l
-				[0] 0x20a5c10: call %0x20a5aa8, %free\l
-				[15] 0x20a5ce8: load %0x20a57b8\l
-				[15] 0x20a5dd8: bitcast %0x20a5ce8\l
-				[0] 0x20a5e70: call %0x20a5dd8, %free\l
-				[0] 0x20a4d70: ret \l
+		label="fnc2";
+		Node0x2762cf0 [shape=record, label="{
+				alloca %0x275d220\l
+				alloca %0x275d220\l
+				store %0x2761770, %0x2762d98\l
+				store %0x2761798, %0x2762df8\l
+				load %0x2762d98\l
+				ret %0x27637a8\l
 			}"];
 	}
 	subgraph cluster_3 {
 		color=lightgrey;
-		label="free";
+		label="fnc3";
+		Node0x2763d00 [shape=record, label="{
+				alloca %0x275d220\l
+				alloca %0x275d220\l
+				alloca %0x275d220\l
+				store %0x2763b80, %0x2763da8\l
+				store %0x2763ba8, %0x2763e08\l
+				store %0x27601a0, %0x2763eb8\l
+				load %0x2763da8\l
+				bitcast %0x2765308\l
+				call %0x2765468, %free\l
+				load %0x2763e08\l
+				bitcast %0x2765df8\l
+				call %0x2766008, %free\l
+				ret \l
+			}"];
 	}
 	subgraph cluster_4 {
 		color=lightgrey;
-		label="main";
-		Node0x20a6020 [shape=record, label="{
-				[15] 0x20a5b98: alloca %0x20a2830\l
-				[15] 0x20a60e8: alloca %0x20a2830\l
-				[15] 0x20a6178: alloca %0x20a2830\l
-				[15] 0x20a61d8: alloca %0x20a2830\l
-				[15] 0x20a6288: alloca %0x20a2830\l
-				[0] 0x20a6300: store %0x20a4880, %0x20a5b98\l
-				[15] 0x20a64f0: call %0x20a6130, %malloc\l
-				[15] 0x20a65c8: bitcast %0x20a64f0\l
-				[0] 0x20a6640: store %0x20a65c8, %0x20a60e8\l
-				[15] 0x20a66e0: call %0x20a6130, %malloc\l
-				[15] 0x20a6828: bitcast %0x20a66e0\l
-				[0] 0x20a68a0: store %0x20a6828, %0x20a6178\l
-				[15] 0x20a6940: call %0x20a6130, %malloc\l
-				[15] 0x20a69a8: bitcast %0x20a6940\l
-				[0] 0x20a6a20: store %0x20a69a8, %0x20a61d8\l
-				[15] 0x20a6a88: load %0x20a60e8\l
-				[15] 0x20a6b00: call %0x20a6a88, %fnc1\l
-				[0] 0x20a6bd0: store %0x20a6b00, %0x20a6288\l
-				[15] 0x20a6c38: load %0x20a6288\l
-				[15] 0x20a6c98: bitcast %0x20a6c38\l
-				[0] 0x20a6d30: call %0x20a6c98, %free\l
-				[15] 0x20a6de8: load %0x20a6178\l
-				[15] 0x20a6798: load %0x20a61d8\l
-				[15] 0x20a6f88: call %0x20a6de8, %0x20a6798, %fnc2\l
-				[0] 0x20a7060: store %0x20a6f88, %0x20a6288\l
-				[15] 0x20a70c8: load %0x20a6288\l
-				[15] 0x20a7128: load %0x20a61d8\l
-				[0] 0x20a71d8: call %0x20a70c8, %0x20a7128, %fnc3\l
-				[15] 0x20a7298: load %0x20a60e8\l
-				[15] 0x20a72f8: bitcast %0x20a7298\l
-				[0] 0x20a7370: call %0x20a72f8, %free\l
-				[0] 0x20a7428: ret %0x20a4880\l
-			}"];
+		label="free";
 	}
 	subgraph cluster_5 {
 		color=lightgrey;
+		label="main";
+		Node0x2766be0 [shape=record, label="{
+				alloca %0x275d220\l
+				alloca %0x275d220\l
+				alloca %0x275d220\l
+				alloca %0x275d220\l
+				alloca %0x275d220\l
+				store %0x27601a0, %0x2765b88\l
+				call %0x2766d10, %malloc\l
+				bitcast %0x2767500\l
+				store %0x27676d8, %0x2766cc8\l
+				call %0x2766d10, %malloc\l
+				bitcast %0x27683d0\l
+				store %0x2768618, %0x2766d58\l
+				call %0x2766d10, %malloc\l
+				bitcast %0x2769270\l
+				store %0x2769428, %0x2766db8\l
+				load %0x2766cc8\l
+				call %0x276a088, %fnc1\l
+				store %0x276a220, %0x2766e68\l
+				load %0x2766e68\l
+				bitcast %0x276a578\l
+				call %0x276a6f8, %free\l
+				load %0x2766d58\l
+				load %0x2766db8\l
+				call %0x276af78, %0x2768588, %fnc2\l
+				store %0x276b378, %0x2766e68\l
+				load %0x2766e68\l
+				load %0x2766db8\l
+				call %0x276b6b8, %0x276b838, %fnc3\l
+				load %0x2766cc8\l
+				bitcast %0x276bbe8\l
+				call %0x276bd48, %free\l
+				ret %0x27601a0\l
+			}"];
+	}
+	subgraph cluster_6 {
+		color=lightgrey;
 		label="malloc";
 	}
-	Node0x20a6020 -> Node0x20a4d20
-	Node0x20a6020 -> Node0x20a5240
-	Node0x20a6020 -> Node0x20a56c0
+	Node0x2766be0 -> Node0x2760860
+	Node0x2766be0 -> Node0x2762cf0
+	Node0x2766be0 -> Node0x2763d00
 }

@@ -2,12 +2,12 @@
  Name: testcase.bc
  Target triple: x86_64-unknown-linux-gnu
  Function: fnc1
- Function EntyBlackBlock: : 0x20a4d20
-  BasicBlock: 0x20a4d20
+ Function EntyBlackBlock: : 0x1f25d20
+  BasicBlock: 0x1f25d20
   BasicBlockName: 
   BasicBlock Parent: fnc1
   BasicBlock Module: testcase.bc
-   #Instruction 0x20a4dc8
+   #Instruction 0x1f25dc8
    #Instruction Type.TypeID 15
    #Instruction OpCode: 29
    #Instruction OpName: alloca
@@ -15,9 +15,9 @@
       opnd Type.ValueID print: 18
       opnd Type.TypeID: 11
       opnd type Print: 
-          [ptr ]0x20a2830
+          [ptr ]0x1f23830
 
-   #Instruction 0x20a4e58
+   #Instruction 0x1f25e58
    #Instruction Type.TypeID 15
    #Instruction OpCode: 29
    #Instruction OpName: alloca
@@ -25,9 +25,9 @@
       opnd Type.ValueID print: 18
       opnd Type.TypeID: 11
       opnd type Print: 
-          [ptr ]0x20a2830
+          [ptr ]0x1f23830
 
-   #Instruction 0x20a4ed0
+   #Instruction 0x1f25ed0
    #Instruction Type.TypeID 0
    #Instruction OpCode: 31
    #Instruction OpName: store
@@ -35,13 +35,13 @@
       opnd Type.ValueID print: 0
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a4cf0
+          [ptr ]0x1f25cf0
       opnd Type.ValueID print: 53
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a4dc8
+          [ptr ]0x1f25dc8
 
-   #Instruction 0x20a4f38
+   #Instruction 0x1f25f38
    #Instruction Type.TypeID 15
    #Instruction OpCode: 30
    #Instruction OpName: load
@@ -49,9 +49,9 @@
       opnd Type.ValueID print: 53
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a4dc8
+          [ptr ]0x1f25dc8
 
-   #Instruction 0x20a5000
+   #Instruction 0x1f26000
    #Instruction Type.TypeID 0
    #Instruction OpCode: 31
    #Instruction OpName: store
@@ -59,13 +59,13 @@
       opnd Type.ValueID print: 54
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a4f38
+          [ptr ]0x1f25f38
       opnd Type.ValueID print: 53
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a4e58
+          [ptr ]0x1f25e58
 
-   #Instruction 0x20a5068
+   #Instruction 0x1f26068
    #Instruction Type.TypeID 15
    #Instruction OpCode: 30
    #Instruction OpName: load
@@ -73,9 +73,9 @@
       opnd Type.ValueID print: 53
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a4e58
+          [ptr ]0x1f25e58
 
-   #Instruction 0x20a50c8
+   #Instruction 0x1f260c8
    #Instruction Type.TypeID 0
    #Instruction OpCode: 1
    #Instruction OpName: ret
@@ -83,15 +83,15 @@
       opnd Type.ValueID print: 54
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a5068
+          [ptr ]0x1f26068
 
  Function: fnc2
- Function EntyBlackBlock: : 0x20a5240
-  BasicBlock: 0x20a5240
+ Function EntyBlackBlock: : 0x1f26240
+  BasicBlock: 0x1f26240
   BasicBlockName: 
   BasicBlock Parent: fnc2
   BasicBlock Module: testcase.bc
-   #Instruction 0x20a52d8
+   #Instruction 0x1f262d8
    #Instruction Type.TypeID 15
    #Instruction OpCode: 29
    #Instruction OpName: alloca
@@ -99,9 +99,9 @@
       opnd Type.ValueID print: 18
       opnd Type.TypeID: 11
       opnd type Print: 
-          [ptr ]0x20a2830
+          [ptr ]0x1f23830
 
-   #Instruction 0x20a5338
+   #Instruction 0x1f26338
    #Instruction Type.TypeID 15
    #Instruction OpCode: 29
    #Instruction OpName: alloca
@@ -109,9 +109,9 @@
       opnd Type.ValueID print: 18
       opnd Type.TypeID: 11
       opnd type Print: 
-          [ptr ]0x20a2830
+          [ptr ]0x1f23830
 
-   #Instruction 0x20a5400
+   #Instruction 0x1f26400
    #Instruction Type.TypeID 0
    #Instruction OpCode: 31
    #Instruction OpName: store
@@ -119,13 +119,13 @@
       opnd Type.ValueID print: 0
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a51e0
+          [ptr ]0x1f261e0
       opnd Type.ValueID print: 53
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a52d8
+          [ptr ]0x1f262d8
 
-   #Instruction 0x20a5480
+   #Instruction 0x1f26480
    #Instruction Type.TypeID 0
    #Instruction OpCode: 31
    #Instruction OpName: store
@@ -133,13 +133,13 @@
       opnd Type.ValueID print: 0
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a5208
+          [ptr ]0x1f26208
       opnd Type.ValueID print: 53
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a5338
+          [ptr ]0x1f26338
 
-   #Instruction 0x20a54e8
+   #Instruction 0x1f264e8
    #Instruction Type.TypeID 15
    #Instruction OpCode: 30
    #Instruction OpName: load
@@ -147,9 +147,9 @@
       opnd Type.ValueID print: 53
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a52d8
+          [ptr ]0x1f262d8
 
-   #Instruction 0x20a5548
+   #Instruction 0x1f26548
    #Instruction Type.TypeID 0
    #Instruction OpCode: 1
    #Instruction OpName: ret
@@ -157,15 +157,15 @@
       opnd Type.ValueID print: 54
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a54e8
+          [ptr ]0x1f264e8
 
  Function: fnc3
- Function EntyBlackBlock: : 0x20a56c0
-  BasicBlock: 0x20a56c0
+ Function EntyBlackBlock: : 0x1f266c0
+  BasicBlock: 0x1f266c0
   BasicBlockName: 
   BasicBlock Parent: fnc3
   BasicBlock Module: testcase.bc
-   #Instruction 0x20a5758
+   #Instruction 0x1f26758
    #Instruction Type.TypeID 15
    #Instruction OpCode: 29
    #Instruction OpName: alloca
@@ -173,9 +173,9 @@
       opnd Type.ValueID print: 18
       opnd Type.TypeID: 11
       opnd type Print: 
-          [ptr ]0x20a2830
+          [ptr ]0x1f23830
 
-   #Instruction 0x20a57b8
+   #Instruction 0x1f267b8
    #Instruction Type.TypeID 15
    #Instruction OpCode: 29
    #Instruction OpName: alloca
@@ -183,9 +183,9 @@
       opnd Type.ValueID print: 18
       opnd Type.TypeID: 11
       opnd type Print: 
-          [ptr ]0x20a2830
+          [ptr ]0x1f23830
 
-   #Instruction 0x20a5868
+   #Instruction 0x1f26868
    #Instruction Type.TypeID 15
    #Instruction OpCode: 29
    #Instruction OpName: alloca
@@ -193,9 +193,9 @@
       opnd Type.ValueID print: 18
       opnd Type.TypeID: 11
       opnd type Print: 
-          [ptr ]0x20a2830
+          [ptr ]0x1f23830
 
-   #Instruction 0x20a58e0
+   #Instruction 0x1f268e0
    #Instruction Type.TypeID 0
    #Instruction OpCode: 31
    #Instruction OpName: store
@@ -203,13 +203,13 @@
       opnd Type.ValueID print: 0
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a5660
+          [ptr ]0x1f26660
       opnd Type.ValueID print: 53
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a5758
+          [ptr ]0x1f26758
 
-   #Instruction 0x20a5960
+   #Instruction 0x1f26960
    #Instruction Type.TypeID 0
    #Instruction OpCode: 31
    #Instruction OpName: store
@@ -217,13 +217,13 @@
       opnd Type.ValueID print: 0
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a5688
+          [ptr ]0x1f26688
       opnd Type.ValueID print: 53
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a57b8
+          [ptr ]0x1f267b8
 
-   #Instruction 0x20a59e0
+   #Instruction 0x1f269e0
    #Instruction Type.TypeID 0
    #Instruction OpCode: 31
    #Instruction OpName: store
@@ -231,13 +231,13 @@
       opnd Type.ValueID print: 18
       opnd Type.TypeID: 11
       opnd type Print: 
-          [ptr ]0x20a4880
+          [ptr ]0x1f25880
       opnd Type.ValueID print: 53
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a5868
+          [ptr ]0x1f26868
 
-   #Instruction 0x20a5a48
+   #Instruction 0x1f26a48
    #Instruction Type.TypeID 15
    #Instruction OpCode: 30
    #Instruction OpName: load
@@ -245,9 +245,9 @@
       opnd Type.ValueID print: 53
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a5758
+          [ptr ]0x1f26758
 
-   #Instruction 0x20a5aa8
+   #Instruction 0x1f26aa8
    #Instruction Type.TypeID 15
    #Instruction OpCode: 47
    #Instruction OpName: bitcast
@@ -255,9 +255,9 @@
       opnd Type.ValueID print: 54
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a5a48
+          [ptr ]0x1f26a48
 
-   #Instruction 0x20a5c10
+   #Instruction 0x1f26c10
    #Instruction Type.TypeID 0
    #Instruction OpCode: 54
    #Instruction OpName: call
@@ -265,12 +265,12 @@
       opnd Type.ValueID print: 71
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a5aa8
+          [ptr ]0x1f26aa8
       opnd Type.ValueID print: 5
       opnd Type.TypeID: 15
       opnd type Print: 
           [Name]free
-   #Instruction 0x20a5ce8
+   #Instruction 0x1f26ce8
    #Instruction Type.TypeID 15
    #Instruction OpCode: 30
    #Instruction OpName: load
@@ -278,9 +278,9 @@
       opnd Type.ValueID print: 53
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a57b8
+          [ptr ]0x1f267b8
 
-   #Instruction 0x20a5dd8
+   #Instruction 0x1f26dd8
    #Instruction Type.TypeID 15
    #Instruction OpCode: 47
    #Instruction OpName: bitcast
@@ -288,9 +288,9 @@
       opnd Type.ValueID print: 54
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a5ce8
+          [ptr ]0x1f26ce8
 
-   #Instruction 0x20a5e70
+   #Instruction 0x1f26e70
    #Instruction Type.TypeID 0
    #Instruction OpCode: 54
    #Instruction OpName: call
@@ -298,26 +298,26 @@
       opnd Type.ValueID print: 71
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a5dd8
+          [ptr ]0x1f26dd8
       opnd Type.ValueID print: 5
       opnd Type.TypeID: 15
       opnd type Print: 
           [Name]free
-   #Instruction 0x20a4d70
+   #Instruction 0x1f25d70
    #Instruction Type.TypeID 0
    #Instruction OpCode: 1
    #Instruction OpName: ret
    #Instruction Operand Num: 0
 
  Function: free
- Function EntyBlackBlock: : 0x20a5b28
+ Function EntyBlackBlock: : 0x1f26b28
  Function: main
- Function EntyBlackBlock: : 0x20a6020
-  BasicBlock: 0x20a6020
+ Function EntyBlackBlock: : 0x1f27020
+  BasicBlock: 0x1f27020
   BasicBlockName: 
   BasicBlock Parent: main
   BasicBlock Module: testcase.bc
-   #Instruction 0x20a5b98
+   #Instruction 0x1f26b98
    #Instruction Type.TypeID 15
    #Instruction OpCode: 29
    #Instruction OpName: alloca
@@ -325,9 +325,9 @@
       opnd Type.ValueID print: 18
       opnd Type.TypeID: 11
       opnd type Print: 
-          [ptr ]0x20a2830
+          [ptr ]0x1f23830
 
-   #Instruction 0x20a60e8
+   #Instruction 0x1f270e8
    #Instruction Type.TypeID 15
    #Instruction OpCode: 29
    #Instruction OpName: alloca
@@ -335,9 +335,9 @@
       opnd Type.ValueID print: 18
       opnd Type.TypeID: 11
       opnd type Print: 
-          [ptr ]0x20a2830
+          [ptr ]0x1f23830
 
-   #Instruction 0x20a6178
+   #Instruction 0x1f27178
    #Instruction Type.TypeID 15
    #Instruction OpCode: 29
    #Instruction OpName: alloca
@@ -345,9 +345,9 @@
       opnd Type.ValueID print: 18
       opnd Type.TypeID: 11
       opnd type Print: 
-          [ptr ]0x20a2830
+          [ptr ]0x1f23830
 
-   #Instruction 0x20a61d8
+   #Instruction 0x1f271d8
    #Instruction Type.TypeID 15
    #Instruction OpCode: 29
    #Instruction OpName: alloca
@@ -355,9 +355,9 @@
       opnd Type.ValueID print: 18
       opnd Type.TypeID: 11
       opnd type Print: 
-          [ptr ]0x20a2830
+          [ptr ]0x1f23830
 
-   #Instruction 0x20a6288
+   #Instruction 0x1f27288
    #Instruction Type.TypeID 15
    #Instruction OpCode: 29
    #Instruction OpName: alloca
@@ -365,9 +365,9 @@
       opnd Type.ValueID print: 18
       opnd Type.TypeID: 11
       opnd type Print: 
-          [ptr ]0x20a2830
+          [ptr ]0x1f23830
 
-   #Instruction 0x20a6300
+   #Instruction 0x1f27300
    #Instruction Type.TypeID 0
    #Instruction OpCode: 31
    #Instruction OpName: store
@@ -375,13 +375,13 @@
       opnd Type.ValueID print: 18
       opnd Type.TypeID: 11
       opnd type Print: 
-          [ptr ]0x20a4880
+          [ptr ]0x1f25880
       opnd Type.ValueID print: 53
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a5b98
+          [ptr ]0x1f26b98
 
-   #Instruction 0x20a64f0
+   #Instruction 0x1f274f0
    #Instruction Type.TypeID 15
    #Instruction OpCode: 54
    #Instruction OpName: call
@@ -389,12 +389,12 @@
       opnd Type.ValueID print: 18
       opnd Type.TypeID: 11
       opnd type Print: 
-          [ptr ]0x20a6130
+          [ptr ]0x1f27130
       opnd Type.ValueID print: 5
       opnd Type.TypeID: 15
       opnd type Print: 
           [Name]malloc
-   #Instruction 0x20a65c8
+   #Instruction 0x1f275c8
    #Instruction Type.TypeID 15
    #Instruction OpCode: 47
    #Instruction OpName: bitcast
@@ -402,9 +402,9 @@
       opnd Type.ValueID print: 78
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a64f0
+          [ptr ]0x1f274f0
 
-   #Instruction 0x20a6640
+   #Instruction 0x1f27640
    #Instruction Type.TypeID 0
    #Instruction OpCode: 31
    #Instruction OpName: store
@@ -412,13 +412,13 @@
       opnd Type.ValueID print: 71
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a65c8
+          [ptr ]0x1f275c8
       opnd Type.ValueID print: 53
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a60e8
+          [ptr ]0x1f270e8
 
-   #Instruction 0x20a66e0
+   #Instruction 0x1f276e0
    #Instruction Type.TypeID 15
    #Instruction OpCode: 54
    #Instruction OpName: call
@@ -426,12 +426,12 @@
       opnd Type.ValueID print: 18
       opnd Type.TypeID: 11
       opnd type Print: 
-          [ptr ]0x20a6130
+          [ptr ]0x1f27130
       opnd Type.ValueID print: 5
       opnd Type.TypeID: 15
       opnd type Print: 
           [Name]malloc
-   #Instruction 0x20a6828
+   #Instruction 0x1f27828
    #Instruction Type.TypeID 15
    #Instruction OpCode: 47
    #Instruction OpName: bitcast
@@ -439,9 +439,9 @@
       opnd Type.ValueID print: 78
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a66e0
+          [ptr ]0x1f276e0
 
-   #Instruction 0x20a68a0
+   #Instruction 0x1f278a0
    #Instruction Type.TypeID 0
    #Instruction OpCode: 31
    #Instruction OpName: store
@@ -449,13 +449,13 @@
       opnd Type.ValueID print: 71
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a6828
+          [ptr ]0x1f27828
       opnd Type.ValueID print: 53
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a6178
+          [ptr ]0x1f27178
 
-   #Instruction 0x20a6940
+   #Instruction 0x1f27940
    #Instruction Type.TypeID 15
    #Instruction OpCode: 54
    #Instruction OpName: call
@@ -463,12 +463,12 @@
       opnd Type.ValueID print: 18
       opnd Type.TypeID: 11
       opnd type Print: 
-          [ptr ]0x20a6130
+          [ptr ]0x1f27130
       opnd Type.ValueID print: 5
       opnd Type.TypeID: 15
       opnd type Print: 
           [Name]malloc
-   #Instruction 0x20a69a8
+   #Instruction 0x1f279a8
    #Instruction Type.TypeID 15
    #Instruction OpCode: 47
    #Instruction OpName: bitcast
@@ -476,9 +476,9 @@
       opnd Type.ValueID print: 78
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a6940
+          [ptr ]0x1f27940
 
-   #Instruction 0x20a6a20
+   #Instruction 0x1f27a20
    #Instruction Type.TypeID 0
    #Instruction OpCode: 31
    #Instruction OpName: store
@@ -486,13 +486,13 @@
       opnd Type.ValueID print: 71
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a69a8
+          [ptr ]0x1f279a8
       opnd Type.ValueID print: 53
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a61d8
+          [ptr ]0x1f271d8
 
-   #Instruction 0x20a6a88
+   #Instruction 0x1f27a88
    #Instruction Type.TypeID 15
    #Instruction OpCode: 30
    #Instruction OpName: load
@@ -500,9 +500,9 @@
       opnd Type.ValueID print: 53
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a60e8
+          [ptr ]0x1f270e8
 
-   #Instruction 0x20a6b00
+   #Instruction 0x1f27b00
    #Instruction Type.TypeID 15
    #Instruction OpCode: 54
    #Instruction OpName: call
@@ -510,14 +510,14 @@
       opnd Type.ValueID print: 54
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a6a88
+          [ptr ]0x1f27a88
       opnd Type.ValueID print: 5
       opnd Type.TypeID: 15
       opnd type Print: 
           [Name]fnc1
 call!
 
-   #Instruction 0x20a6bd0
+   #Instruction 0x1f27bd0
    #Instruction Type.TypeID 0
    #Instruction OpCode: 31
    #Instruction OpName: store
@@ -525,13 +525,13 @@ call!
       opnd Type.ValueID print: 78
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a6b00
+          [ptr ]0x1f27b00
       opnd Type.ValueID print: 53
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a6288
+          [ptr ]0x1f27288
 
-   #Instruction 0x20a6c38
+   #Instruction 0x1f27c38
    #Instruction Type.TypeID 15
    #Instruction OpCode: 30
    #Instruction OpName: load
@@ -539,9 +539,9 @@ call!
       opnd Type.ValueID print: 53
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a6288
+          [ptr ]0x1f27288
 
-   #Instruction 0x20a6c98
+   #Instruction 0x1f27c98
    #Instruction Type.TypeID 15
    #Instruction OpCode: 47
    #Instruction OpName: bitcast
@@ -549,9 +549,9 @@ call!
       opnd Type.ValueID print: 54
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a6c38
+          [ptr ]0x1f27c38
 
-   #Instruction 0x20a6d30
+   #Instruction 0x1f27d30
    #Instruction Type.TypeID 0
    #Instruction OpCode: 54
    #Instruction OpName: call
@@ -559,12 +559,12 @@ call!
       opnd Type.ValueID print: 71
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a6c98
+          [ptr ]0x1f27c98
       opnd Type.ValueID print: 5
       opnd Type.TypeID: 15
       opnd type Print: 
           [Name]free
-   #Instruction 0x20a6de8
+   #Instruction 0x1f27de8
    #Instruction Type.TypeID 15
    #Instruction OpCode: 30
    #Instruction OpName: load
@@ -572,9 +572,9 @@ call!
       opnd Type.ValueID print: 53
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a6178
+          [ptr ]0x1f27178
 
-   #Instruction 0x20a6798
+   #Instruction 0x1f27798
    #Instruction Type.TypeID 15
    #Instruction OpCode: 30
    #Instruction OpName: load
@@ -582,9 +582,9 @@ call!
       opnd Type.ValueID print: 53
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a61d8
+          [ptr ]0x1f271d8
 
-   #Instruction 0x20a6f88
+   #Instruction 0x1f27f88
    #Instruction Type.TypeID 15
    #Instruction OpCode: 54
    #Instruction OpName: call
@@ -592,18 +592,18 @@ call!
       opnd Type.ValueID print: 54
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a6de8
+          [ptr ]0x1f27de8
       opnd Type.ValueID print: 54
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a6798
+          [ptr ]0x1f27798
       opnd Type.ValueID print: 5
       opnd Type.TypeID: 15
       opnd type Print: 
           [Name]fnc2
 call!
 
-   #Instruction 0x20a7060
+   #Instruction 0x1f28060
    #Instruction Type.TypeID 0
    #Instruction OpCode: 31
    #Instruction OpName: store
@@ -611,13 +611,13 @@ call!
       opnd Type.ValueID print: 78
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a6f88
+          [ptr ]0x1f27f88
       opnd Type.ValueID print: 53
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a6288
+          [ptr ]0x1f27288
 
-   #Instruction 0x20a70c8
+   #Instruction 0x1f280c8
    #Instruction Type.TypeID 15
    #Instruction OpCode: 30
    #Instruction OpName: load
@@ -625,9 +625,9 @@ call!
       opnd Type.ValueID print: 53
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a6288
+          [ptr ]0x1f27288
 
-   #Instruction 0x20a7128
+   #Instruction 0x1f28128
    #Instruction Type.TypeID 15
    #Instruction OpCode: 30
    #Instruction OpName: load
@@ -635,9 +635,9 @@ call!
       opnd Type.ValueID print: 53
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a61d8
+          [ptr ]0x1f271d8
 
-   #Instruction 0x20a71d8
+   #Instruction 0x1f281d8
    #Instruction Type.TypeID 0
    #Instruction OpCode: 54
    #Instruction OpName: call
@@ -645,18 +645,18 @@ call!
       opnd Type.ValueID print: 54
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a70c8
+          [ptr ]0x1f280c8
       opnd Type.ValueID print: 54
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a7128
+          [ptr ]0x1f28128
       opnd Type.ValueID print: 5
       opnd Type.TypeID: 15
       opnd type Print: 
           [Name]fnc3
 call!
 
-   #Instruction 0x20a7298
+   #Instruction 0x1f28298
    #Instruction Type.TypeID 15
    #Instruction OpCode: 30
    #Instruction OpName: load
@@ -664,9 +664,9 @@ call!
       opnd Type.ValueID print: 53
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a60e8
+          [ptr ]0x1f270e8
 
-   #Instruction 0x20a72f8
+   #Instruction 0x1f282f8
    #Instruction Type.TypeID 15
    #Instruction OpCode: 47
    #Instruction OpName: bitcast
@@ -674,9 +674,9 @@ call!
       opnd Type.ValueID print: 54
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a7298
+          [ptr ]0x1f28298
 
-   #Instruction 0x20a7370
+   #Instruction 0x1f28370
    #Instruction Type.TypeID 0
    #Instruction OpCode: 54
    #Instruction OpName: call
@@ -684,12 +684,12 @@ call!
       opnd Type.ValueID print: 71
       opnd Type.TypeID: 15
       opnd type Print: 
-          [ptr ]0x20a72f8
+          [ptr ]0x1f282f8
       opnd Type.ValueID print: 5
       opnd Type.TypeID: 15
       opnd type Print: 
           [Name]free
-   #Instruction 0x20a7428
+   #Instruction 0x1f28428
    #Instruction Type.TypeID 0
    #Instruction OpCode: 1
    #Instruction OpName: ret
@@ -697,7 +697,7 @@ call!
       opnd Type.ValueID print: 18
       opnd Type.TypeID: 11
       opnd type Print: 
-          [ptr ]0x20a4880
+          [ptr ]0x1f25880
 
  Function: malloc
- Function EntyBlackBlock: : 0x20a6388
+ Function EntyBlackBlock: : 0x1f27388
