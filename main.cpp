@@ -63,6 +63,7 @@ static std::string _bb_shape("[shape=record, label=");
 static std::string Node("Node");
 static std::string TF_symbol("|{<s0>T|<s1>F}");
 
+static int BasicBlockNumber = 0;
 
 //void graph_function_call(BBtoValue_vector& bb_function_call_list){
 void graph_function_call(BBtoBB_vector& bb_function_call_list){
@@ -110,6 +111,8 @@ void graph_function_start(Function& f){
 	fout << std::endl;
 	fout.close();
 	
+	// Reset BasicBlockNumber //
+	BasicBlockNumber = 0;
 	cluster_number++;
 }
 
@@ -123,12 +126,15 @@ void graph_function_end()
 
 void graph_basicblock_start(BasicBlock& bb)
 {
-	
+	Function *func = bb.getParent();	
+
 	std::ofstream fout;
 	fout.open("graph.dot", std::ofstream::out | std::ofstream::app);
 	fout << "\t\t";
 	fout << Node;
 	fout << &bb << " " << _bb_shape << "\"" << curly_bracket_left << std::endl;
+	fout << "\t\t\t\t[" << func->getName().str();
+	fout << "%" <<  std::to_string(BasicBlockNumber++) << "]" << NewLine << std::endl;
 	fout.close();
 }
 
