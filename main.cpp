@@ -4,22 +4,36 @@
 #include <ostream>
 #include <fstream>
 #include <vector>
+#include <list>
 #include <utility>
 #include <llvm/IRReader/IRReader.h>
 #include <llvm/IR/LLVMContext.h>
 #include <llvm/Bitcode/BitcodeWriter.h>
 #include <llvm/Bitcode/BitcodeReader.h>
 
+using namespace llvm;
+using namespace std;
+
+class InstructionDataSet
+{
+public:
+	Function *f;
+	BasicBlock *bb;
+	Instruction *inst;
+
+	InstructionDataSet(Function *f, BasicBlock *bb, Instruction *inst):f(f), bb(bb), inst(inst){}
+};
+	
 
 /*
 
-	ignore: malloc/free
-
+	Ignore function List: 
+	 - malloc/free
+	 - llvm.dbg.declare
 */
 
 
 
-using namespace llvm;
 
 //typedef std::vector<std::pair<const BasicBlock*, const Value*>> BBtoValue_vector;
 typedef std::vector<std::pair<const BasicBlock*, const BasicBlock*>> BBtoBB_vector;
@@ -223,6 +237,106 @@ void graph_basicblock_end()
 }
 
 
+
+bool splitBBModuleOnce(std::unique_ptr<Module> &m){
+
+	std::list<InstructionDataSet *> ToSplitBBList;
+	InstructionDataSet *data;
+  
+	for (auto iter1 = m->getFunctionList().begin(); 
+		iter1 != m->getFunctionList().end(); iter1++) 
+	{
+
+		Function &f = *iter1;
+		for (auto iter2 = f.getBasicBlockList().begin(); 
+			iter2 != f.getBasicBlockList().end(); iter2++) 
+		{
+
+			BasicBlock &bb = *iter2;
+			Instruction *pastInst = reinterpret_cast<Instruction *>(0);
+			for (auto iter3 = bb.begin(); iter3 != bb.end(); iter3++) 
+			{
+
+				Instruction &inst = *iter3;
+				/* store split point */
+				if(pastInst != reinterpret_cast<Instruction *>(0)){
+					/* Ignore if the next instruction is "br" */
+					if((!strcmp(pastInst->getOpcodeName(), "call")) && strcmp(inst.getOpcodeName(), "br")){
+						data = new InstructionDataSet(&f, &bb, &inst);
+						ToSplitBBList.push_back(data);
+						break;
+					}
+				}
+				pastInst = &inst;
+      		}
+    	}
+  	}
+
+
+	BasicBlock *tmp;
+	std::list<InstructionDataSet *>::iterator iter;
+	/* split by using splitBasicBlock function */
+	for(iter = ToSplitBBList.begin(); iter != ToSplitBBList.end(); iter++){
+		tmp = (*iter)->bb->splitBasicBlock((*iter)->inst);
+	}
+
+	return true;
+}
+
+int splitBBModuleChecker(std::unique_ptr<Module> &m){
+
+
+	int CheckSum = 0;
+	int InstCall_flag = 0;
+
+	std::list<InstructionDataSet *> ToSplitBBList;
+  
+	for (auto iter1 = m->getFunctionList().begin(); 
+			iter1 != m->getFunctionList().end(); iter1++) {
+
+		Function &f = *iter1;
+		for (auto iter2 = f.getBasicBlockList().begin(); 
+				iter2 != f.getBasicBlockList().end(); iter2++) 
+		{
+
+			InstCall_flag = 0;
+			
+			BasicBlock &bb = *iter2;
+			for (auto iter3 = bb.begin(); iter3 != bb.end(); iter3++) 
+			{
+				
+				Instruction &inst = *iter3;
+				/* Increase CheckSum per Call Inst */
+				if(!strcmp(inst.getOpcodeName(), "call")){
+					CheckSum++;
+					InstCall_flag = 1;
+				}
+      			}
+			/* Decrease CheckSum per BB if BB has a Call Inst */
+			if(InstCall_flag == 1)
+			{
+				CheckSum--;
+			}
+    		}
+		
+		
+  	}
+
+	return CheckSum;
+}
+
+void modulePreprocess(std::unique_ptr<Module>& m)
+{
+
+	while(splitBBModuleChecker(m) != 0){
+		splitBBModuleOnce(m);
+	}
+	splitBBModuleOnce(m);
+
+}
+
+
+
 int main(int argc, char *argv[]) {
 
 	if (argc != 2) {
@@ -234,6 +348,8 @@ int main(int argc, char *argv[]) {
 	LLVMContext context;
 	SMDiagnostic error;
 	std::unique_ptr<Module> m = parseIRFile(filename, error, context);
+
+	modulePreprocess(m);
 
 	#ifdef DEBUG_FLAG
 	std::cout << " Successfully read Module:" << std::endl;
